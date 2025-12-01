@@ -7,13 +7,15 @@ Los usuarios pueden registrarse, iniciar sesión y guardar información personal
 Además, la aplicación integra la API de Pokémon, permitiendo que el usuario busque información de cualquier Pokémon directamente desde la app.
 
 Está pensado como práctica de desarrollo Android con manejo de CRUD, autenticación básica y consumo de API externa.
-
+---
 ✒️ Autor
 
 Aaron Centeno Esquivel
 📧 Correo: a.centeno2@alumnos.santotomas.cl
 
 💼 GitHub: AaronCenteno1
+ 
+---
 
 🛠️ Entorno de Desarrollo
 
@@ -29,6 +31,7 @@ Aaron Centeno Esquivel
 
 ⚙️ JDK: Versión 21.0.6 (OpenJDK 21, 64-bit Server VM)
 
+---
 🚀 Cómo Funciona la Aplicación
 
 El flujo general de la aplicación es simple e intuitivo:
@@ -39,11 +42,15 @@ Pantalla de inicio donde el usuario puede iniciar sesión con su cuenta existent
 
 Incluye un botón que permite crear una nueva cuenta, redirigiendo al RegistroActivity.
 
+---
+
 2. RegistroActivity
 
 Permite crear un nuevo usuario ingresando sus datos básicos.
 
 Al completar el registro, el usuario puede iniciar sesión con la cuenta creada.
+
+---
 
 3. ActivityUsuario
 
@@ -58,8 +65,11 @@ El usuario ingresa el nombre de un Pokémon.
 La app muestra información detallada del Pokémon y su imagen.
 
 Botón Guardar datos para almacenar la información del usuario en SQLite.
+---
 
 🏗️ Arquitectura y Clases Principales
+
+---
 
 La aplicación sigue una arquitectura sencilla separando la lógica de datos de la interfaz.
 
@@ -71,6 +81,8 @@ Extiende SQLiteOpenHelper y gestiona la creación y actualización de la base de
 onCreate(): Crea la tabla de usuarios al iniciar la app.
 
 onUpgrade(): Permite actualizar el esquema si cambia la versión.
+
+---
 
 🌐 Integración con API Pokémon
 
