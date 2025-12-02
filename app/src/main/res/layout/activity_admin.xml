@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".AdminActivity">
+
+    <!-- TÍTULO -->
+    <TextView
+        android:id="@+id/txtTituloAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Panel Administrador"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- LISTA DE REGISTROS -->
+    <ListView
+        android:id="@+id/listRecord"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+
+    <!-- BOTÓN DE ACCIÓN -->
+    <Button
+        android:id="@+id/btnNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar Nuevo"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

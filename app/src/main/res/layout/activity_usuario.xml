@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/fondo_degradado">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREACIÓN DE PERFIL"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- NOMBRE -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"/>
+
+        <!-- APELLIDO -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:layout_marginTop="16dp"/>
+
+        <!-- EDAD -->
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:inputType="number"
+            android:layout_marginTop="16dp"/>
+
+        <!-- SELECCIONAR CUMPLEAÑOS -->
+        <Button
+            android:id="@+id/btnSelectBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar cumpleaños"
+            android:layout_marginTop="16dp"/>
+
+        <!-- TEXTO QUE MUESTRA LA FECHA SELECCIONADA -->
+        <TextView
+            android:id="@+id/tvBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="8dp"/>
+
+        <!-- BOTÓN TOMAR FOTO -->
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomar foto"
+            android:layout_marginTop="16dp"/>
+
+        <!-- VISTA DE LA FOTO -->
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:background="#ddd"
+            android:src="@android:drawable/ic_menu_camera"/>
+
+        <!-- BOTÓN GUARDAR -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Guardar" />
+
+        <!-- 🔥 NUEVO BOTÓN: IR A POKÉMON -->
+        <Button
+            android:id="@+id/btnPokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar Pokémon"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
